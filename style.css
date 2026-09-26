@@ -1,0 +1,141 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('fontes/RedHatDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('fontes/RedHatDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url('fontes/RedHatDisplay-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(225, 100%, 94%);
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+    font-family: 'Red Hat Display', sans-serif;
+    padding: 20px;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 30px 50px hsl(224, 23%, 55%, 0.3);
+}
+
+main > img {
+    width: 100%;
+    display: block;
+}
+
+.conteudo {
+    padding: 32px;
+    text-align: center;
+}
+
+.conteudo > p {
+    color: hsl(224, 23%, 55%);
+}
+
+.plano {
+    display: flex;
+    align-items: center;
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 24px 0;
+    text-align: left;
+}
+
+.plano img {
+    width: 40px;
+    height: 40px;
+}
+
+.plano-textos {
+    display: flex;
+    flex-direction: column;
+    margin-left: 16px;
+}
+
+.plano-textos p:first-child {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+
+.plano-textos p:last-child {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+}
+
+.plano a {
+    margin-left: auto;
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.plano a:hover {
+    color: hsl(245, 83%, 68%);
+}
+
+.conteudo button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-pagar {
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    margin-top: 24px;
+    box-shadow: 0 15px 30px hsl(245, 75%, 52%, 0.4);
+}
+
+.btn-pagar:hover {
+    background-color: hsl(245, 83%, 68%);
+}
+
+.btn-cancelar {
+    background-color: transparent;
+    color: hsl(224, 23%, 55%);
+    margin-top: 16px;
+}
+
+.btn-cancelar:hover {
+    color: hsl(223, 47%, 23%);
+}
+
+@media (min-width: 501px) {
+    body {
+        background-image: url('images/pattern-background-desktop.svg');
+    }
+}
