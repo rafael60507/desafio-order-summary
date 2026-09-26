@@ -24,7 +24,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/rafael60507]
-- Live Site URL: (não hospedado)
+- Live Site URL: (https://rafael60507.github.io/desafio-order-summary/)
 
 ## My process
 
