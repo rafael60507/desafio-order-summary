@@ -41,12 +41,6 @@ Aprendi a usar Flexbox pra alinhar elementos tanto na horizontal quanto na verti
 
 Também entendi a diferença entre o seletor `:first-child` (que olha os irmãos dentro do mesmo pai) e o combinador (que restringe a regra só a filhos diretos)
 
-```css
-main > img {
-    width: 100%;
-    display: block;
-}
-```
 
 Outra coisa importante: quando se usa `@font-face` com pesos específicos (500, 700, 900), é preciso declarar explicitamente o `font-weight` nos elementos de texto, porque o navegador não escolhe automaticamente um peso próximo, ele simplesmente ignora a fonte se o peso não bater exatamente.
 
